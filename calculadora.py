@@ -1,23 +1,24 @@
-operacao_de_calcular = input('Selecioone a operação (soma, subtracao, mutoplicacao, divisao): ')
-numero_1 = float(input('Digite o primeiro numero: '))
-numero_2 = float(input('Digite o segundo numero: '))
+def add(a, b):
+    return a + b
 
+def subtract(a, b):
+    return a - b
 
-if operacao_de_calcular == 'soma':
-    resultado = numero_1 + numero_2
-elif operacao_de_calcular == 'subtracao':
-    resultado = numero_1 - numero_2
-elif operacao_de_calcular == 'multiplicacao':
-    resultado = numero_1 * numero_2
-elif operacao_de_calcular == 'divisao':
-    if numero_2 != 0:
-         resultado = numero_1 / numero_2
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
     else:
-        print('Erro Divisão por zero não é permitido.')
+        return "Erro: Divisão por zero!"
 
-else:
-    print('Erro: Operaçao invalida.')
-    resultado = None
+# Exemplo de uso
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
 
-if resultado is not None:
-    print(f'o resultado é: {resultado}')
+print("Soma:", add(num1, num2))
+print("Subtração:", subtract(num1, num2))
+print("Multiplicação:", multiply(num1, num2))
+print("Divisão:", divide(num1, num2))
+
