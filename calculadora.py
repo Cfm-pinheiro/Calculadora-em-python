@@ -43,6 +43,8 @@ def main():
     print("2. Subtração")
     print("3. Multiplicação")
     print("4. Divisão")
+
+try:
     escolha = int(input("Escolha a operação (1/2/3/4): "))
 
     num1 = float(input("Digite o primeiro número: "))
@@ -58,6 +60,8 @@ def main():
         print("Resultado da Divisão:", divisao(num1, num2))
     else:
         print("Opção inválida!")
+except ValueError:
+    print('Entrada inválida. Certifique-se de digitar números válidos.')
 
 if __name__ == "__main__":
     main()
