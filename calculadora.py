@@ -1,4 +1,4 @@
-def add(a, b):
+def soma(a, b):
     """
     Função para somar dois números.
     :param a: Primeiro número
@@ -7,7 +7,7 @@ def add(a, b):
     """
     return a + b
 
-def subtract(a, b):
+def subtracao(a, b):
     """
     Função para subtrair dois números.
     :param a: Primeiro número
@@ -16,7 +16,7 @@ def subtract(a, b):
     """
     return a - b
 
-def multiply(a, b):
+def mutiplicacao(a, b):
     """
     Função para multiplicar dois números.
     :param a: Primeiro número
@@ -25,7 +25,7 @@ def multiply(a, b):
     """
     return a * b
 
-def divide(a, b):
+def divisao(a, b):
     """
     Função para dividir dois números.
     :param a: Primeiro número
@@ -43,19 +43,19 @@ def main():
     print("2. Subtração")
     print("3. Multiplicação")
     print("4. Divisão")
-    choice = int(input("Escolha a operação (1/2/3/4): "))
+    escolha = int(input("Escolha a operação (1/2/3/4): "))
 
     num1 = float(input("Digite o primeiro número: "))
     num2 = float(input("Digite o segundo número: "))
 
-    if choice == 1:
-        print("Resultado da Soma:", add(num1, num2))
-    elif choice == 2:
-        print("Resultado da Subtração:", subtract(num1, num2))
-    elif choice == 3:
-        print("Resultado da Multiplicação:", multiply(num1, num2))
-    elif choice == 4:
-        print("Resultado da Divisão:", divide(num1, num2))
+    if escolha == 1:
+        print("Resultado da Soma:", soma(num1, num2))
+    elif escolha == 2:
+        print("Resultado da Subtração:", subtracao(num1, num2))
+    elif escolha == 3:
+        print("Resultado da Multiplicação:", mutiplicacao(num1, num2))
+    elif escolha == 4:
+        print("Resultado da Divisão:", divisao(num1, num2))
     else:
         print("Opção inválida!")
 
