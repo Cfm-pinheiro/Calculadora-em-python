@@ -1,10 +1,10 @@
 def soma(a, b):
-    """
+    '''
     Função para somar dois números.
     :param a: Primeiro número
     :param b: Segundo número
     :return: Soma dos números
-    """
+    '''
     return a + b
 
 def subtracao(a, b):
